@@ -7,17 +7,46 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
-      padding-top: 56px; /* Adjust based on your navbar height */
+      padding-top: 56px;
+      margin: 0; 
+      overflow-x: hidden;
+      min-height: 100vh;
+      position: relative;
     }
     .feature-card {
       margin-bottom: 20px;
     }
     .navbar-light.bg-baby-pink {
-        background-color: #FFB6C1; /* Baby Pink color */
-      }
+        background-color: #FFB6C1;
+    }
+    /* Custom class for the Image section */
+    #image-section {
+      height: 35rem;
+      width: 100%;
+      background: url('img4.jpeg') center center / cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+    h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      color: 	#AA336A;
+      font-size: 5rem;
+
+    }
     .features-section {
-        padding: 40px 0; /* Adjust the padding values as needed */
-      }
+      padding: 40px 0;
+    }
+    footer {
+      bottom: 0;
+      width: 100%;
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 10px 0;
+    }
   </style>
 </head>
 <body>
@@ -25,12 +54,10 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-baby-pink fixed-top">
     <a class="navbar-brand" href="#">INAARI</a>
-    
     <!-- Navbar Toggle Button for Mobile -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
     <!-- Navbar Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
@@ -60,15 +87,19 @@
         </li>
       </ul>
     </div>
-  </nav>
-    
+</nav>
 
 <!-- Page content -->
-<div class="container mt-5">
-  <!-- Features Section -->
+<div class="container mt-5"> 
+  <!-- Image Section with custom styling -->
+  <section id="image-section">
+    <h1>INAARI</h1>
+    <!-- Add any additional content you want for this section -->
+  </section>
+
+  <!-- Features Section with custom padding class -->
   <section id="features" class="features-section">
     <h2 class="text-center mb-4">Features</h2>
-
     <div class="row">
       <!-- Feature Card 1 -->
       <div class="col-md-4">
@@ -105,9 +136,9 @@
     </div>
   </section>
 </div>
-<br><br><br><br><br><br>
+
 <!-- Footer -->
-<footer class="bg-light text-center py-3 fixed-bottom ">
+<footer class="text-center">
   <p>&copy; 2023 Your Website. All rights reserved.</p>
   <p>Developed by Sharayu.</p>
 </footer>
@@ -116,5 +147,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
